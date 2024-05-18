@@ -1,0 +1,12 @@
+@import "variables";
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  .main-content {
+    width: 90%;
+    background-color: whitesmoke;
+    @media screen and (min-width: $large) {
+      width: 900px;
+    }
+  }
+}

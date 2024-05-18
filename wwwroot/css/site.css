@@ -1,0 +1,15 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+}
+.login-container .main-content {
+  width: 90%;
+  background-color: whitesmoke;
+}
+@media screen and (min-width: 992px) {
+  .login-container .main-content {
+    width: 900px;
+  }
+}
+
+/*# sourceMappingURL=site.css.map */
