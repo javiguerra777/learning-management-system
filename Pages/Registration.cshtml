@@ -4,5 +4,56 @@
     ViewData["Title"] = "Create New Account";
 }
 
-<section class="login-container">
+<section class="registration-container">
+    <section class="registration-image-container">
+        <h2>Discover new courses every day</h2>
+        <p>Explore a world of knowledge at your fingertips</p>
+        @* insert image below *@
+        @* insert image above *@
+        <p>Enhance your incoming experience with diverse courses</p>
+    </section>
+    <section class="registration-form-container">
+        <h3 class="mt-lg-5">Sign up for free access</h3>
+        <p>Unlock premium resources and features for your account</p>
+        <form action="post" class="w-100">
+            <label for="full-name" class="w-100">
+                <p>Your Name</p>
+                <input 
+                type="text" 
+                name="FullName" 
+                id="full-name"
+                placeholder="Your Full Name"
+                class="form-control"
+                required
+                >
+            </label>
+            <br>
+            <label for="email" class="w-100 mt-3">
+                <p>Your Email</p>
+                <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="youremail@email.com"
+                class="form-control"
+                required
+                >
+            </label>
+            <br>
+            <label for="password" class="w-100 mt-3">
+                <p>Your Password</p>
+                <input 
+                type="password" 
+                name="Password" 
+                id="password"
+                placeholder="Your Password"
+                class="form-control"
+                required
+                >
+            </label>
+            <br>
+            <input type="submit" value="Complete Registration" class="submit-form mt-3 w-100 p-2">
+        </form>
+        <p class="mt-3">If you have an account <a href="/">Login Here</a></p>
+    </section>
 </section>

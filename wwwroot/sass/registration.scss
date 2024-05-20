@@ -1,0 +1,43 @@
+@import "variables";
+.registration-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  @media screen and (min-width: $large) {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .registration-image-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: $app-tan;
+    @media screen and (min-width: $large) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .registration-form-container {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $app-white;
+    @media screen and (min-width: $large) {
+      width: 100%;
+      height: 100%;
+      padding: 0 50px;
+      border-radius: 0px;
+    }
+    .submit-form {
+      background-color: $dark-orange;
+      color: $app-white;
+      border-radius: 10px;
+    }
+  }
+}
