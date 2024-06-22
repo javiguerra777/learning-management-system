@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace learning_management_system.Models{
   public class UserModel {
@@ -16,7 +15,17 @@ namespace learning_management_system.Models{
     [Required]
     public string PasswordHash { get; set; }
 
-    // Navigation property
-    public List<CourseModel> Courses { get; set; }
+    public int Points { get; set;}
+
+    // Navigation properties
+    public List<UserCourse> UserCourses { get; set; }
+  }
+
+  public class UserCourse {
+    public int UserId { get; set; }
+    public UserModel User { get; set; }
+
+    public int CourseId { get; set; }
+    public CourseModel Course { get; set; }
   }
 }

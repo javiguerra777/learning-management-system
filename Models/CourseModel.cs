@@ -16,18 +16,18 @@ namespace learning_management_system.Models{
     public string Instructor { get; set; }
 
     [Required]
-    public string CourseImage { get; set; }
+    public string DisplayImageUrl { get; set; }
 
     [Required]
-    public int CourseLength { get; set; }
+    public int CompletionTime { get; set; }
 
     [Required]
     public int Rating { get; set; }
-    
-    // Foreign Key
-    public int UserId { get; set; }
+    public int NumberOfRatings { get; set; }
 
-    // Navigation property
-    public UserModel User { get; set; }
+    // Navigation properties
+    public List<UserCourse> UserCourses { get; set; }
+    public List<SubsectionModel> Subsections { get; set; }
+    
   }
 }
