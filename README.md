@@ -36,7 +36,7 @@ DB_PASSWORD"Password to log into database instance [ex: password]"
 ```
 dotnet ef database update
 ```
-If you get an error you may need to install the EF core tools globally to do so run: `dotnet tools install --global dotnet-ef` and then re-try the database migrations.
+If you get an error you may need to install the EF core tools globally to do so run: `dotnet tool install --global dotnet-ef` and then re-try the database migrations.
 
 4. Now that you have your database set up, environment variables set up, and the database migrations complete. It is now time to run the project to do so, first open a terminal in VSCode and you can run either of these commands:
 ```
