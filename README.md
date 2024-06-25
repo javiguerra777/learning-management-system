@@ -13,7 +13,7 @@
 <p>Here is a list of prerequisites to be able to run this project on your computer:</p>
 <ul>
 <li>Have Dot Net installed on your computer</li>
-<li>Have Postgres installed on your computer, and set up a database instance you want to use, a good name for this database is DotNet-Lms-Sandbox</li>
+<li>Have Postgres installed on your computer, and set up a database instance you want to use, a good name for this database is dotnet-lms-sandbox</li>
 <li>Have SASS installed on your computer</li>
 <li>Have Python installed on your computer</li>
 <li>Fundamentals of how Git and GitHub work</li>
@@ -28,7 +28,7 @@ In this file this is what needs to be included
 ```
 DB_HOST="Database Host goes here [ex: localhost]"
 DB_PORT="Database Port goes here [ex: 5432]"
-DB_NAME="Database Name goes here [ex: DotNet-Lms-Sandbox]"
+DB_NAME="Database Name goes here [ex: dotnet-lms-sandbox]"
 DB_USERNAME="Username to log into database instance [ex: admin]"
 DB_PASSWORD"Password to log into database instance [ex: password]"
 ```
