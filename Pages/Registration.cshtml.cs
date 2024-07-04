@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Identity;
 using learning_management_system.Data;
 using learning_management_system.Models;
 using Microsoft.EntityFrameworkCore;
+using learning_management_system.Middleware;
+using learning_management_system.Services;
 
 namespace learning_management_system.Pages;
 
@@ -51,6 +53,8 @@ public class RegistrationModel : PageModel
         };
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
+        var token = new TokenAuthentication().GenerateJwtToken(user);
+        CookiesService.RegistrationCookies(HttpContext, token, user);
         _logger.LogInformation("Successful Registration!");
         return RedirectToPage("/home");
     }
